@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:background="@color/white_lite"
+    android:id="@+id/relativeLayoutItem">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/title"
+        android:text="This is title of Image"
+        android:maxLines="2"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageView"
+        android:textColor="@color/text_checks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:textSize="14dp"
+        android:maxLines="6"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/title"
+        android:textColor="@color/text_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/description"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Source: Times of India"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_below="@id/source"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="2020-05-20T06:33:00Z"
+        android:textSize="8dp" />
+</RelativeLayout>
